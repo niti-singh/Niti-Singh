@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono&family=Schibsted+Grotesk&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:rgb(14, 14, 25);
+    color: #fff
+    
+}
+#header{
+    width: 100%;
+    height: 100vh;   
+    color:#fff; 
+}
+#container{
+    padding: 10px 10%;    
+}
+nav{
+    width: 100%;
+    /* height: 15vh;    */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+    cursor: pointer; 
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;    
+    margin: 10px 20px;
+    /* gap: 3rem; */
+}
+nav ul li a{
+    color: #fff;    
+    font-size: 25px;   
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a:hover{
+   /* color:#65000B; */
+   color: #73C2FB;
+    opacity: 0.9; 
+    font-size: 1.5rem;    
+    /* transition-duration: 5s; */
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+#hero{
+    width: 100%;
+    display: flex;
+    height: 85vh;
+}
+.icons .fa-brands{
+    color: #fff;
+    font-size: 1.9rem;
+    /* transition-property:background-color, transform; */
+    transition: .5s;        
+}
+
+.icons .insta:hover{    
+    background: rgb(195,34,116);
+    background: linear-gradient(0deg, rgba(195,34,116,1) 0%, rgba(225,187,33,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    transform: scale(1.7);    
+}
+.icons .linked:hover{
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    transform: scale(1.7);  
+}
+.icons .fb:hover{
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    transform: scale(1.7);  
+}
+.icons .twit:hover{
+    background: linear-gradient(#fff,#2b6cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    transform: scale(1.7);    
+}
+.icons .what:hover{
+    background: linear-gradient(#fff,#0be152);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    transform: scale(1.7);   
+}
+.icons{
+    /* padding-left: 3rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 3.3em;  
+    cursor: pointer;  
+}
+.btn button{
+    border: solid #73C2FB;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 5rem;
+    color:#73C2FB ;
+    background:transparent;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+}
+.btn button:hover{
+    background: #73C2FB;
+    color:black ;
+}
+
+#left, #right{    
+    display: flex;    
+}
+#left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    padding-left: 3rem;  
+    padding-right: 1.5rem;      
+}
+.leftcontent{
+    margin-left: 4rem;
+    margin-top:20px;          
+}
+.leftcontent h1{   
+    
+    font-size: 3.5em;     
+}
+.leftcontent h2{
+    padding-top: 25px;    
+    font-size: 2.5rem;
+}
+.leftcontent h3{
+    line-height: 1.5;
+    font-size: 1.2rem;
+    
+}
+
+span{
+    color:#73C2FB ;       
+}
+span:hover{
+    opacity: 0.5;
+}
+#right{
+    width: 30%;   
+}
+#right .design .circle{
+    /* aspect-ratio-->height of both the circle are same to their width */
+    aspect-ratio: 1;    
+    position: absolute;
+    border-radius: 50%;    
+    top: 50%;
+    left: 75%;    
+    transform: translate(-50% ,-50%);
+
+}
+.circle:nth-child(1){
+    
+    width:30%;
+    
+}
+.circle:nth-child(2){
+    width: 25%;
+    background-image: url("img.png");
+    background-size: 100%;
+    border: 3px solid  #fff;
+    box-shadow:
+     0 0 1rem#fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3873f1,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem  ;  
+    transition: 1s ease;
+}
+.circle:nth-child(2):hover{
+    zoom: 1.5;
+}
+/*--------------------Services----------------*/
+#services{
+    padding: 80px 0;   
+     
+}
+.services-list{        
+    margin: 50px 0;      
+    display: flex;      
+    justify-content: space-evenly;   
+    gap: 8%;    
+}
+.services-list .services-content{
+    
+    min-width: 200px; 
+   min-height: 250px;         
+    background: #0d0c0c;
+    padding: 20px;
+    border-radius: 10px; 
+    transition:background 0.5s, transform 0.5s;   
+}
+.services-list .services-content:hover{   
+    background: linear-gradient(  #09568a 6%,rgb(37, 35, 36) );
+    transform: translateY(-20px) ;  
+    box-shadow: 0 0 .7rem #fff,inset 0 0 .5rem #96d3ff;
+}
+.services-content{         
+    color:  #d7dbcd;
+    font-size: 15px;    
+}
+.services-content h2{
+    padding: 15px 0;
+}
+.services-content p{
+    padding-bottom: 0px;
+}
+.fa-brands{
+    font-size: 40px;  
+    font-weight: 200;  
+}
+.fa-solid{
+    font-size: 40px;  
+    font-weight: 200;  
+}
+#ch{
+    display: none;
+}
+#ch:checked ~ .readmore{
+    display: block;    
+}
+#ch:checked ~ label{
+    display: none;
+}
+.readmore{    
+    display: none;
+    
+}
+.readmore p{
+    padding-left: 0%;
+}
+label{
+    display: inline-block;
+    cursor: pointer;  
+    color: #73C2FB;   
+}
+#ch1{
+    display: none;
+}
+#ch1:checked ~ .readmore1{
+    display: inline;    
+}
+#ch1:checked ~ label{
+    display: none;
+}
+.readmore1{
+    
+    display: none;
+}
+#ch2{
+    display: none;
+}
+#ch2:checked ~ .readmore2{
+    display: block;    
+}
+#ch2:checked ~ label{
+    display: none;
+}
+.readmore2{
+    display: none;
+}
+
+
+/*----------------------Projects----------------------------*/
+#Portfolio{
+    padding: 80px 0;
+
+}
+.sub-title-1{
+    
+    font-weight: 600;
+    color: white;
+    padding: 0 7rem;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));  
+    justify-content: space-evenly;   
+    gap: 50px;
+    margin: 2.5rem 3rem; 
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    min-width: 300px; 
+    min-height: 180px;
+    transition: transform 1s ;
+    
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(#09253a 50% ,rgba(29, 25, 28, 0.6));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+   font-size: 500;
+   margin-bottom: 20px; 
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+
+/*------------------art-------------*/
+
+#Art{
+    padding: 80px 0;
+
+}
+.sub-title-3{
+    
+    font-weight: 600;
+    color: white;
+    padding: 0 7rem;
+}
+.art-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
+    justify-content: space-evenly;   
+    gap: 10%;
+    margin: 2.5rem 3rem;
+    transition:1s;
+}
+.art-list .box:hover{
+   transform: scale(1.1);
+   z-index: 2;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    min-width: 300px; 
+    min-height: 180px;
+   
+    
+}
+
+/*-----------------contact-----------*/
+
+.row{
+    margin-top: 180px;
+    display: flex;
+   
+    }
+.sub-title-2{
+    
+    font-weight: 600;       
+    color: #fff;
+   
+}
+.contact-left{   
+    flex-basis: 46%;
+    padding: 0  7% ;
+}
+.contact-right{
+    flex-basis: 50%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #1d5176;   
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+    display: inline-block;
+}
+.social-midea{
+    margin-top: 30px;
+}
+.social-midea a{
+    text-decoration: none;    
+    margin-right:15px ;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;    
+}
+.fa-brands{
+    font-size: 30px;
+}
+.social-midea a:hover{
+    color:rgb(175, 97, 97) ;
+    transform: translateY(-10px);    
+}
+.contact-right form{
+    width: 100%;   
+    margin-right: 30px;
+    
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    background: #3e3e3e;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-right button{
+    background-color: transparent;
+}
+
+.copyright{
+    text-align: center;  
+   padding: 25px 0;
+   font-weight: 300;
+   margin-top: 20px;  
+    background: rgb(1, 1, 21);   
+}
+.fa-heart{
+    font-size: 15px;
+    color: red;
+}
+
+
+/*--------------- Css for responsive------------*/
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        top: 0;
+        right: -200px;
+        position: fixed;
+        background: linear-gradient(  #1e6191 6%,rgb(26, 2, 14) );    
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }   
+    nav ul .cross{
+        position: absolute;
+        padding: 25px 25px;        
+        cursor: pointer;
+    }
+    nav ul .fa-solid{
+        top: 25px;
+        left: 0%;
+    }
+    
+    .icons{
+        padding-left: 20%;
+    }
+    #right .design .circle{
+        aspect-ratio: 1;    
+        position: absolute;
+        border-radius: 50%;    
+        top: 50%;
+        left: 83%;    
+    }    
+    
+}
+
+@media only screen and (max-width:800px){
+    .services-list{
+        display: grid;   
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+        justify-content: space-evenly;  
+        gap: 50px;        
+    }
+    .tab-link{
+        margin: 0 5px;
+    }
+    .leftcontent h1{   
+    
+        font-size: 2.5em;     
+    }
+    .leftcontent h2{
+        padding-top: 25px;    
+        font-size: 2rem;
+    }
+    .leftcontent h3{
+        line-height: 1;
+        font-size: 1rem;
+        transition: 1s ease; 
+    }  
+}
