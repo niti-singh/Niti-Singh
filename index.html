@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+   
+  <div id="header">
+    <div id="container">
+      <nav>
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#Portfolio">Projects</a></li>
+          <li><a href="#Art">My Art</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-square-xmark cross" onclick="closemenu()"></i>
+        </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>           
+    </div>
+    <div id="hero">
+      <div id="left">
+        <div class="icons">
+          <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f fb"></i></a>         
+          <a href="https://www.linkedin.com/in/niti-singh-700655221"><i class="fa-brands fa-linkedin-in linked"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram insta"></i></a>          
+          <a href="https://web.whatsapp.com/"> <i class="fa-brands fa-whatsapp what"></i></a>
+          <a href="https://twitter.com"><i class="fa-brands fa-twitter twit"></i></a>         
+        </div>  
+        <div class="leftcontent">
+          <h1>Wellcome to my portfolio Website</h1>          
+          <h2>Hii! I'm <span>Niti Singh</span></h2>
+          <h3><i class="input">Software Engineer</i></h3>
+          <div class="btn">
+           <a href="Niti Singh Resume.pdf" download > <button>Download CV</button></a>
+            <a href="#contact"><button>About Me</button></a>
+          </div>          
+        </div>
+       
+      </div>
+      <div id="right">
+        <div class="design">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>    
+    </div>    
+  </div>
+
+  <!----------------services--------->
+  <div id="services">
+    <div id="container">
+      <h1 class="sub-title">My Servives</h1>
+
+      <div class="services-list">
+        <div class="services-content">
+          <input type="checkbox" id="ch">
+          <i class="fa-brands fa-html5"></i>
+          <h2><span>HTML CSS JavaScript</span></h2>          
+          <p>I have good knowledge in front-end languages and i developed some projects </p>
+          <div class="readmore">
+            <p> usig these like - Voice Recognition, BMI Calculator, Simpe Clock etc.</p>
+            <label for="ch">Show less</label>
+          </div>
+          <label for="ch">Read more</label>                
+        </div>   
+
+        <div class="services-content">
+          <input type="checkbox" id="ch1">
+          <i class="fa-brands fa-react"></i>
+          <h2><span>React.js</span></h2>
+          <p>I have good knowledge of react or react libray and i have also used react libray</p>
+          <div class="readmore1">
+            <p>using the react and bootstrap i developed the project.</p>
+            <label for="ch1">Show less</label>
+          </div>
+          <label for="ch1">Read more</label>                    
+        </div>
+
+        <div class="services-content">
+          <input type="checkbox" id="ch2">
+          <i class="fa-solid fa-database"></i>
+          <h2><span>MongoDB</span></h2>
+          <p>I have intermidate knowledge of mongodb data structure and i have also used  </p>
+          <div class="readmore2">
+            <p> using the mongodb i developed the login page. </p> 
+            <label for="ch2">Show less</label>
+          </div>
+          <label for="ch2">Read more</label>                       
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!----------------------Projects---------------------------->
+   
+  <div id="Portfolio">
+    <div class="container">
+      <h1 class="sub-title-1">My Project</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work1.png">
+          <div class="layer">
+            <h3>BMI Calculater</h3>
+            <p>This is BMI Calculator that is tells you how much is your body fat in relation to height and weight.This project showcase HTML & CSS,JavaScript Skils. </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work2.png">
+          <div class="layer">
+            <h3>Portfolio</h3>
+            <p>The Portfolio website is a way to show my work. This project is developed by using the HTML and CSS,JavaScript. </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work3.png">
+          <div class="layer">
+            <h3>Institute</h3>
+            <p>This website has been created for coaching institutes.This project is developed by using the HTML & CSS,JavaScript,MERN Stack,BootStrap  </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work4.png">
+          <div class="layer">
+            <h3>Voice Recognition</h3>
+            <p>It is a web page that transforms spoken words into written text.This web page developed by using HTML & CSS,JavaScript.  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--------------------------------Art------------------------------------->
+
+  <div id="Art">
+    <div class="container">
+      <h1 class="sub-title-3">My Drawings</h1>
+      <div class="art-list">
+      <div class="box">
+        <img src="art1.png">
+      </div>
+      <div class="box">
+        <img src="art2.png">
+      </div>
+      <div class="box">
+        <img src="art3.png">
+      </div>
+      <div class="box">
+        <img src="art4.png">
+      </div>
+      <div class="box">
+        <img src="art5.png">
+      </div>
+      <div class="box">
+        <img src="art6.png">
+      </div>
+
+    </div>
+  </div>
+ </div>
+<!----------------------------------contact------------------------------------------------>
+   
+<div id="contact">
+  <div class="container-4">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title-2">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>nitusingh34943@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 7049034943</p>
+        <div class="social-midea">
+          <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://github.com/niti-singh"><i class="fa-brands fa-github"></i></i></a>
+          <a href="https://www.linkedin.com/in/niti-singh-700655221"></ahref><i class="fa-brands fa-linkedin-in linked"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram insta"></i></a>          
+        </div>
+        
+      </div>
+      <div class="contact-right">
+        <form action="">
+          <input type="text" name="Name" placeholder="your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="message"  cols="30" rows="10" placeholder="Your Message"></textarea>
+          <div class="btn">
+          <button type="submit" class="btn btn2">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Niti. Made with <i class="fa-solid fa-heart"></i> Niti Singh  </p>
+  </div>
+</div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+  <script src="/script.js"></script>
+</body>
+</html>
