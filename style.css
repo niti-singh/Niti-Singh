@@ -23,7 +23,6 @@ body{
 }
 nav{
     width: 100%;
-    /* height: 15vh;    */
     height: 100px;
     display: flex;
     align-items: center;
@@ -348,41 +347,41 @@ label{
 
 /*------------------art-------------*/
 
-#Art{
+#Art {
     padding: 80px 0;
-
 }
-.sub-title-3{
-    
+
+.sub-title-3 {
     font-weight: 600;
     color: white;
     padding: 0 7rem;
+   
 }
-.art-list{
+
+.art-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
-    justify-content: space-evenly;   
-    gap: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
     margin: 2.5rem 3rem;
-    transition:1s;
+    transition: 1s;
 }
-.art-list .box:hover{
-   transform: scale(1.1);
-   z-index: 2;
+
+.art-list .box:hover {
+    transform: scale(1.1);
+    z-index: 2;
 }
-.box{
+
+.box {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.box img{
+
+.box img {
     width: 100%;
     border-radius: 10px;
     display: block;
-    min-width: 300px; 
-    min-height: 180px;
-   
-    
+    object-fit: cover;
 }
 
 /*-----------------contact-----------*/
@@ -470,73 +469,84 @@ form input, form textarea{
 
 /*--------------- Css for responsive------------*/
 
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
-@media only screen and (max-width:600px){
-    nav .fa-solid{
+
+@media only screen and (max-width: 600px) {
+    nav .fa-solid {
         display: block;
         font-size: 25px;
+        position: absolute;
+        right: 20px; /* Aligns the icon to the right */
+        top: 20px;
     }
-    nav ul{
+
+    nav ul {
         top: 0;
         right: -200px;
         position: fixed;
-        background: linear-gradient(  #1e6191 6%,rgb(26, 2, 14) );    
+        background: linear-gradient(#1e6191 6%, rgb(26, 2, 14));
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right .5s;
+        transition: right 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
-    }   
-    nav ul .cross{
+    }
+
+    nav ul .cross {
         position: absolute;
-        padding: 25px 25px;        
+        padding: 25px 25px;
         cursor: pointer;
     }
-    nav ul .fa-solid{
+
+    nav ul .fa-solid {
         top: 25px;
         left: 0%;
     }
-    
-    .icons{
+
+    .icons {
         padding-left: 20%;
     }
-    #right .design .circle{
-        aspect-ratio: 1;    
+
+    #right .design .circle {
+        aspect-ratio: 1;
         position: absolute;
-        border-radius: 50%;    
+        border-radius: 50%;
         top: 50%;
-        left: 83%;    
-    }    
-    
+        left: 83%;
+    }
 }
 
-@media only screen and (max-width:800px){
-    .services-list{
-        display: grid;   
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
-        justify-content: space-evenly;  
-        gap: 50px;        
+@media only screen and (max-width: 800px) {
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: space-evenly;
+        gap: 50px;
     }
-    .tab-link{
+
+    .tab-link {
         margin: 0 5px;
     }
-    .leftcontent h1{   
-    
-        font-size: 2.5em;     
+
+    .leftcontent h1 {
+        font-size: 2.5em;
     }
-    .leftcontent h2{
-        padding-top: 25px;    
+
+    .leftcontent h2 {
+        padding-top: 25px;
         font-size: 2rem;
     }
-    .leftcontent h3{
+
+    .leftcontent h3 {
         line-height: 1;
         font-size: 1rem;
-        transition: 1s ease; 
-    }  
+        transition: 1s ease;
+    }
 }
