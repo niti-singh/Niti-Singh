@@ -1,11 +1,11 @@
 
 
- var typed=new Typed(".input",{
-    strings:["Frontend Developer"],
-    typedSpeed:70,
-    backSpeed:55,
-    loop:true
-})
+var typed = new Typed(".input", {
+    strings: ["Frontend Developer"],
+    typeSpeed: 70,
+    backSpeed: 55,
+    loop: true
+});
 
 
 //-------------Sideb baar-----------
